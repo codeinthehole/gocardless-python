@@ -1,4 +1,3 @@
-
 """The GoCardless Python Client Library
 
 This module provides a wrapper around the GoCardless payments API, the
@@ -48,12 +47,12 @@ def set_details(details):
     Should be a dictionary with the following keys
       - "app_id"
       - "app_secret"
-      - "token"
+      - "access_token"
       - "merchant_id"
     """
     global client
     client = Client(details["app_id"],
             details["app_secret"],
-            access_token=details["token"],
+            access_token=details["access_token"],
             merchant_id=details["merchant_id"])
 
